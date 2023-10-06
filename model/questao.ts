@@ -32,4 +32,13 @@ export default class QuestaoModel {
         }
         return false;
     }
+
+    ParaObjeto() {
+        return {
+            id: this.#id,
+            enunciado: this.#enunciado,
+            respostas: [],
+            acertou: this.acertou,
+        }
+    }
 }
